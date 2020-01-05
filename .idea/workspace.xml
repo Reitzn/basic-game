@@ -1,7 +1,99 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="eeffd0f0-db50-4f0b-b514-659d78433725" name="Default Changelist" comment="" />
+    <list default="true" id="eeffd0f0-db50-4f0b-b514-659d78433725" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Enemy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Health.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resources/icons/adventurer/Individual Sprites/adventurer-idle-left-00.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resources/icons/adventurer/Individual Sprites/adventurer-idle-left-01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resources/icons/adventurer/Individual Sprites/adventurer-idle-left-02.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resources/icons/adventurer/Individual Sprites/adventurer-idle-left-03.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resources/icons/adventurer/TimerBasedAnimation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resources/icons/adventurer/health-bar.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/basic-game/Board$TAdapter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/basic-game/Board$TAdapter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/basic-game/Board.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/basic-game/Board.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/basic-game/Player.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/basic-game/Player.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/basic-game/TestMain.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/basic-game/TestMain.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/basic-game/UpdateSprite.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Board.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TestMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TestMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/icons/Adventurer/Individual Sprites/adventurer-attack1-00.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/icons/adventurer/Individual Sprites/adventurer-attack1-00.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/icons/Adventurer/Individual Sprites/adventurer-attack1-01.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/icons/adventurer/Individual Sprites/adventurer-attack1-01.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/icons/Adventurer/Individual Sprites/adventurer-attack1-02.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/icons/adventurer/Individual Sprites/adventurer-attack1-02.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/icons/Adventurer/Individual Sprites/adventurer-attack1-03.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/icons/adventurer/Individual Sprites/adventurer-attack1-03.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/icons/Adventurer/Individual Sprites/adventurer-attack1-04.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/icons/adventurer/Individual Sprites/adventurer-attack1-04.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/icons/Adventurer/Individual Sprites/adventurer-attack2-00.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/icons/adventurer/Individual Sprites/adventurer-attack2-00.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/icons/Adventurer/Individual Sprites/adventurer-attack2-01.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/icons/adventurer/Individual Sprites/adventurer-attack2-01.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/icons/Adventurer/Individual Sprites/adventurer-attack2-02.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/icons/adventurer/Individual Sprites/adventurer-attack2-02.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/icons/Adventurer/Individual Sprites/adventurer-attack2-03.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/icons/adventurer/Individual Sprites/adventurer-attack2-03.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/icons/Adventurer/Individual Sprites/adventurer-attack2-04.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/icons/adventurer/Individual Sprites/adventurer-attack2-04.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/icons/Adventurer/Individual Sprites/adventurer-attack2-05.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/icons/adventurer/Individual Sprites/adventurer-attack2-05.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/icons/Adventurer/Individual Sprites/adventurer-attack3-00.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/icons/adventurer/Individual Sprites/adventurer-attack3-00.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/icons/Adventurer/Individual Sprites/adventurer-attack3-01.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/icons/adventurer/Individual Sprites/adventurer-attack3-01.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/icons/Adventurer/Individual Sprites/adventurer-attack3-02.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/icons/adventurer/Individual Sprites/adventurer-attack3-02.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/icons/Adventurer/Individual Sprites/adventurer-attack3-03.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/icons/adventurer/Individual Sprites/adventurer-attack3-03.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/icons/Adventurer/Individual Sprites/adventurer-attack3-04.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/icons/adventurer/Individual Sprites/adventurer-attack3-04.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/icons/Adventurer/Individual Sprites/adventurer-attack3-05.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/icons/adventurer/Individual Sprites/adventurer-attack3-05.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/icons/Adventurer/Individual Sprites/adventurer-crnr-clmb-00.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/icons/adventurer/Individual Sprites/adventurer-crnr-clmb-00.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/icons/Adventurer/Individual Sprites/adventurer-crnr-clmb-01.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/icons/adventurer/Individual Sprites/adventurer-crnr-clmb-01.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/icons/Adventurer/Individual Sprites/adventurer-crnr-clmb-02.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/icons/adventurer/Individual Sprites/adventurer-crnr-clmb-02.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/icons/Adventurer/Individual Sprites/adventurer-crnr-clmb-03.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/icons/adventurer/Individual Sprites/adventurer-crnr-clmb-03.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/icons/Adventurer/Individual Sprites/adventurer-crnr-clmb-04.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/icons/adventurer/Individual Sprites/adventurer-crnr-clmb-04.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/icons/Adventurer/Individual Sprites/adventurer-crnr-grb-00.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/icons/adventurer/Individual Sprites/adventurer-crnr-grb-00.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/icons/Adventurer/Individual Sprites/adventurer-crnr-grb-01.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/icons/adventurer/Individual Sprites/adventurer-crnr-grb-01.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/icons/Adventurer/Individual Sprites/adventurer-crnr-grb-02.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/icons/adventurer/Individual Sprites/adventurer-crnr-grb-02.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/icons/Adventurer/Individual Sprites/adventurer-crnr-grb-03.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/icons/adventurer/Individual Sprites/adventurer-crnr-grb-03.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/icons/Adventurer/Individual Sprites/adventurer-crnr-jmp-00.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/icons/adventurer/Individual Sprites/adventurer-crnr-jmp-00.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/icons/Adventurer/Individual Sprites/adventurer-crnr-jmp-01.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/icons/adventurer/Individual Sprites/adventurer-crnr-jmp-01.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/icons/Adventurer/Individual Sprites/adventurer-crnr-jmp-02.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/icons/adventurer/Individual Sprites/adventurer-crnr-jmp-02.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/icons/Adventurer/Individual Sprites/adventurer-crouch-00.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/icons/adventurer/Individual Sprites/adventurer-crouch-00.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/icons/Adventurer/Individual Sprites/adventurer-crouch-01.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/icons/adventurer/Individual Sprites/adventurer-crouch-01.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/icons/Adventurer/Individual Sprites/adventurer-crouch-02.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/icons/adventurer/Individual Sprites/adventurer-crouch-02.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/icons/Adventurer/Individual Sprites/adventurer-crouch-03.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/icons/adventurer/Individual Sprites/adventurer-crouch-03.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/icons/Adventurer/Individual Sprites/adventurer-die-00.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/icons/adventurer/Individual Sprites/adventurer-die-00.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/icons/Adventurer/Individual Sprites/adventurer-die-01.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/icons/adventurer/Individual Sprites/adventurer-die-01.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/icons/Adventurer/Individual Sprites/adventurer-die-02.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/icons/adventurer/Individual Sprites/adventurer-die-02.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/icons/Adventurer/Individual Sprites/adventurer-die-03.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/icons/adventurer/Individual Sprites/adventurer-die-03.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/icons/Adventurer/Individual Sprites/adventurer-die-04.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/icons/adventurer/Individual Sprites/adventurer-die-04.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/icons/Adventurer/Individual Sprites/adventurer-die-05.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/icons/adventurer/Individual Sprites/adventurer-die-05.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/icons/Adventurer/Individual Sprites/adventurer-die-06.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/icons/adventurer/Individual Sprites/adventurer-die-06.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/icons/Adventurer/Individual Sprites/adventurer-fall-00.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/icons/adventurer/Individual Sprites/adventurer-fall-00.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/icons/Adventurer/Individual Sprites/adventurer-fall-01.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/icons/adventurer/Individual Sprites/adventurer-fall-01.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/icons/Adventurer/Individual Sprites/adventurer-hurt-00.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/icons/adventurer/Individual Sprites/adventurer-hurt-00.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/icons/Adventurer/Individual Sprites/adventurer-hurt-01.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/icons/adventurer/Individual Sprites/adventurer-hurt-01.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/icons/Adventurer/Individual Sprites/adventurer-hurt-02.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/icons/adventurer/Individual Sprites/adventurer-hurt-02.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/icons/Adventurer/Individual Sprites/adventurer-idle-00.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/icons/adventurer/Individual Sprites/adventurer-idle-00.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/icons/Adventurer/Individual Sprites/adventurer-idle-01.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/icons/adventurer/Individual Sprites/adventurer-idle-01.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/icons/Adventurer/Individual Sprites/adventurer-idle-02.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/icons/adventurer/Individual Sprites/adventurer-idle-02.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/icons/Adventurer/Individual Sprites/adventurer-idle-03.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/icons/adventurer/Individual Sprites/adventurer-idle-03.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/icons/Adventurer/Individual Sprites/adventurer-idle-2-00.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/icons/adventurer/Individual Sprites/adventurer-idle-2-00.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/icons/Adventurer/Individual Sprites/adventurer-idle-2-01.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/icons/adventurer/Individual Sprites/adventurer-idle-2-01.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/icons/Adventurer/Individual Sprites/adventurer-idle-2-02.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/icons/adventurer/Individual Sprites/adventurer-idle-2-02.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/icons/Adventurer/Individual Sprites/adventurer-idle-2-03.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/icons/adventurer/Individual Sprites/adventurer-idle-2-03.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/icons/Adventurer/Individual Sprites/adventurer-jump-00.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/icons/adventurer/Individual Sprites/adventurer-jump-00.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/icons/Adventurer/Individual Sprites/adventurer-jump-01.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/icons/adventurer/Individual Sprites/adventurer-jump-01.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/icons/Adventurer/Individual Sprites/adventurer-jump-02.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/icons/adventurer/Individual Sprites/adventurer-jump-02.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/icons/Adventurer/Individual Sprites/adventurer-jump-03.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/icons/adventurer/Individual Sprites/adventurer-jump-03.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/icons/Adventurer/Individual Sprites/adventurer-run-00.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/icons/adventurer/Individual Sprites/adventurer-run-00.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/icons/Adventurer/Individual Sprites/adventurer-run-01.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/icons/adventurer/Individual Sprites/adventurer-run-01.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/icons/Adventurer/Individual Sprites/adventurer-run-02.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/icons/adventurer/Individual Sprites/adventurer-run-02.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/icons/Adventurer/Individual Sprites/adventurer-run-03.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/icons/adventurer/Individual Sprites/adventurer-run-03.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/icons/Adventurer/Individual Sprites/adventurer-run-04.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/icons/adventurer/Individual Sprites/adventurer-run-04.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/icons/Adventurer/Individual Sprites/adventurer-run-05.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/icons/adventurer/Individual Sprites/adventurer-run-05.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/icons/Adventurer/Individual Sprites/adventurer-slide-00.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/icons/adventurer/Individual Sprites/adventurer-slide-00.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/icons/Adventurer/Individual Sprites/adventurer-slide-01.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/icons/adventurer/Individual Sprites/adventurer-slide-01.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/icons/Adventurer/Individual Sprites/adventurer-smrslt-00.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/icons/adventurer/Individual Sprites/adventurer-smrslt-00.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/icons/Adventurer/Individual Sprites/adventurer-smrslt-01.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/icons/adventurer/Individual Sprites/adventurer-smrslt-01.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/icons/Adventurer/Individual Sprites/adventurer-smrslt-02.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/icons/adventurer/Individual Sprites/adventurer-smrslt-02.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/icons/Adventurer/Individual Sprites/adventurer-smrslt-03.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/icons/adventurer/Individual Sprites/adventurer-smrslt-03.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/icons/Adventurer/Individual Sprites/adventurer-stand-00.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/icons/adventurer/Individual Sprites/adventurer-stand-00.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/icons/Adventurer/Individual Sprites/adventurer-stand-01.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/icons/adventurer/Individual Sprites/adventurer-stand-01.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/icons/Adventurer/Individual Sprites/adventurer-stand-02.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/icons/adventurer/Individual Sprites/adventurer-stand-02.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/icons/Adventurer/adventurer-Sheet.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/icons/adventurer/adventurer-Sheet.png" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,7 +106,13 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1VGJ9UZfX3lHeEb71xP4Qzs9BDh" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -22,8 +120,23 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/resources/icons/Adventurer/Individual Sprites" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
   </component>
-  <component name="RunManager">
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/resources/icons/Adventurer/Individual Sprites" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/resources/icons" />
+      <recent name="$PROJECT_DIR$/src/resources/icons/Adventurer" />
+      <recent name="$PROJECT_DIR$/src/resources/icons/Adventurer/Individual Sprites" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.TestMain">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="basic-game" />
@@ -31,8 +144,30 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TestMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="TestMain" />
+      <module name="basic-game" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TimerBasedAnimation" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="resources.icons.adventurer.TimerBasedAnimation" />
+      <module name="basic-game" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="resources.icons.adventurer.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TestMain" />
+        <item itemvalue="Application.TimerBasedAnimation" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -63,33 +198,103 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1218" height="181" key="GridCell.Tab.0.bottom" timestamp="1576884690016">
+    <state x="237" y="50" key="#Project_Structure" timestamp="1578176004974">
       <screen x="0" y="23" width="1280" height="727" />
     </state>
-    <state width="1218" height="181" key="GridCell.Tab.0.bottom/0.23.1280.727@0.23.1280.727" timestamp="1576884690016" />
-    <state width="1218" height="181" key="GridCell.Tab.0.bottom/0.23.1280.728@0.23.1280.728" timestamp="1576874962197" />
-    <state width="1218" height="181" key="GridCell.Tab.0.center" timestamp="1576884690014">
+    <state x="237" y="50" key="#Project_Structure/0.23.1280.727@0.23.1280.727" timestamp="1578176004974" />
+    <state x="443" y="101" key="#com.intellij.ide.util.MemberChooser" timestamp="1578081909487">
+      <screen x="0" y="23" width="1280" height="729" />
+    </state>
+    <state x="443" y="101" key="#com.intellij.ide.util.MemberChooser/0.23.1280.729@0.23.1280.729" timestamp="1578081909487" />
+    <state x="388" y="140" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1577034322822">
       <screen x="0" y="23" width="1280" height="727" />
     </state>
-    <state width="1218" height="181" key="GridCell.Tab.0.center/0.23.1280.727@0.23.1280.727" timestamp="1576884690014" />
-    <state width="1218" height="181" key="GridCell.Tab.0.center/0.23.1280.728@0.23.1280.728" timestamp="1576874962196" />
-    <state width="1218" height="181" key="GridCell.Tab.0.left" timestamp="1576884690013">
+    <state x="388" y="140" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1280.727@0.23.1280.727" timestamp="1577034322822" />
+    <state width="1218" height="51" key="GridCell.Tab.0.bottom" timestamp="1578185364380">
       <screen x="0" y="23" width="1280" height="727" />
     </state>
-    <state width="1218" height="181" key="GridCell.Tab.0.left/0.23.1280.727@0.23.1280.727" timestamp="1576884690013" />
-    <state width="1218" height="181" key="GridCell.Tab.0.left/0.23.1280.728@0.23.1280.728" timestamp="1576874962195" />
-    <state width="1218" height="181" key="GridCell.Tab.0.right" timestamp="1576884690015">
+    <state width="1218" height="179" key="GridCell.Tab.0.bottom/0.23.1280.724@0.23.1280.724" timestamp="1578076040241" />
+    <state width="1218" height="179" key="GridCell.Tab.0.bottom/0.23.1280.726@0.23.1280.726" timestamp="1578077908771" />
+    <state width="1218" height="51" key="GridCell.Tab.0.bottom/0.23.1280.727@0.23.1280.727" timestamp="1578185364380" />
+    <state width="1218" height="51" key="GridCell.Tab.0.bottom/0.23.1280.728@0.23.1280.728" timestamp="1578177234803" />
+    <state width="1218" height="51" key="GridCell.Tab.0.bottom/0.23.1280.729@0.23.1280.729" timestamp="1578170595651" />
+    <state width="1218" height="224" key="GridCell.Tab.0.bottom/0.23.1280.730@0.23.1280.730" timestamp="1578083872434" />
+    <state width="1218" height="51" key="GridCell.Tab.0.center" timestamp="1578185364379">
       <screen x="0" y="23" width="1280" height="727" />
     </state>
-    <state width="1218" height="181" key="GridCell.Tab.0.right/0.23.1280.727@0.23.1280.727" timestamp="1576884690015" />
-    <state width="1218" height="181" key="GridCell.Tab.0.right/0.23.1280.728@0.23.1280.728" timestamp="1576874962196" />
+    <state width="1218" height="179" key="GridCell.Tab.0.center/0.23.1280.724@0.23.1280.724" timestamp="1578076040239" />
+    <state width="1218" height="179" key="GridCell.Tab.0.center/0.23.1280.726@0.23.1280.726" timestamp="1578077908768" />
+    <state width="1218" height="51" key="GridCell.Tab.0.center/0.23.1280.727@0.23.1280.727" timestamp="1578185364379" />
+    <state width="1218" height="51" key="GridCell.Tab.0.center/0.23.1280.728@0.23.1280.728" timestamp="1578177234802" />
+    <state width="1218" height="51" key="GridCell.Tab.0.center/0.23.1280.729@0.23.1280.729" timestamp="1578170595650" />
+    <state width="1218" height="224" key="GridCell.Tab.0.center/0.23.1280.730@0.23.1280.730" timestamp="1578083872433" />
+    <state width="1218" height="51" key="GridCell.Tab.0.left" timestamp="1578185364379">
+      <screen x="0" y="23" width="1280" height="727" />
+    </state>
+    <state width="1218" height="179" key="GridCell.Tab.0.left/0.23.1280.724@0.23.1280.724" timestamp="1578076040238" />
+    <state width="1218" height="179" key="GridCell.Tab.0.left/0.23.1280.726@0.23.1280.726" timestamp="1578077908767" />
+    <state width="1218" height="51" key="GridCell.Tab.0.left/0.23.1280.727@0.23.1280.727" timestamp="1578185364379" />
+    <state width="1218" height="51" key="GridCell.Tab.0.left/0.23.1280.728@0.23.1280.728" timestamp="1578177234801" />
+    <state width="1218" height="51" key="GridCell.Tab.0.left/0.23.1280.729@0.23.1280.729" timestamp="1578170595649" />
+    <state width="1218" height="224" key="GridCell.Tab.0.left/0.23.1280.730@0.23.1280.730" timestamp="1578083872433" />
+    <state width="1218" height="51" key="GridCell.Tab.0.right" timestamp="1578185364380">
+      <screen x="0" y="23" width="1280" height="727" />
+    </state>
+    <state width="1218" height="179" key="GridCell.Tab.0.right/0.23.1280.724@0.23.1280.724" timestamp="1578076040240" />
+    <state width="1218" height="179" key="GridCell.Tab.0.right/0.23.1280.726@0.23.1280.726" timestamp="1578077908770" />
+    <state width="1218" height="51" key="GridCell.Tab.0.right/0.23.1280.727@0.23.1280.727" timestamp="1578185364380" />
+    <state width="1218" height="51" key="GridCell.Tab.0.right/0.23.1280.728@0.23.1280.728" timestamp="1578177234802" />
+    <state width="1218" height="51" key="GridCell.Tab.0.right/0.23.1280.729@0.23.1280.729" timestamp="1578170595650" />
+    <state width="1218" height="224" key="GridCell.Tab.0.right/0.23.1280.730@0.23.1280.730" timestamp="1578083872434" />
+    <state width="1218" height="224" key="GridCell.Tab.1.bottom" timestamp="1578083872436">
+      <screen x="0" y="23" width="1280" height="730" />
+    </state>
+    <state width="1218" height="224" key="GridCell.Tab.1.bottom/0.23.1280.726@0.23.1280.726" timestamp="1578077782519" />
+    <state width="1218" height="224" key="GridCell.Tab.1.bottom/0.23.1280.727@0.23.1280.727" timestamp="1578077372695" />
+    <state width="1218" height="224" key="GridCell.Tab.1.bottom/0.23.1280.729@0.23.1280.729" timestamp="1578082991583" />
+    <state width="1218" height="224" key="GridCell.Tab.1.bottom/0.23.1280.730@0.23.1280.730" timestamp="1578083872436" />
+    <state width="1218" height="224" key="GridCell.Tab.1.center" timestamp="1578083872435">
+      <screen x="0" y="23" width="1280" height="730" />
+    </state>
+    <state width="1218" height="224" key="GridCell.Tab.1.center/0.23.1280.726@0.23.1280.726" timestamp="1578077782516" />
+    <state width="1218" height="224" key="GridCell.Tab.1.center/0.23.1280.727@0.23.1280.727" timestamp="1578077372694" />
+    <state width="1218" height="224" key="GridCell.Tab.1.center/0.23.1280.729@0.23.1280.729" timestamp="1578082991582" />
+    <state width="1218" height="224" key="GridCell.Tab.1.center/0.23.1280.730@0.23.1280.730" timestamp="1578083872435" />
+    <state width="1218" height="224" key="GridCell.Tab.1.left" timestamp="1578083872435">
+      <screen x="0" y="23" width="1280" height="730" />
+    </state>
+    <state width="1218" height="224" key="GridCell.Tab.1.left/0.23.1280.726@0.23.1280.726" timestamp="1578077782515" />
+    <state width="1218" height="224" key="GridCell.Tab.1.left/0.23.1280.727@0.23.1280.727" timestamp="1578077372693" />
+    <state width="1218" height="224" key="GridCell.Tab.1.left/0.23.1280.729@0.23.1280.729" timestamp="1578082991580" />
+    <state width="1218" height="224" key="GridCell.Tab.1.left/0.23.1280.730@0.23.1280.730" timestamp="1578083872435" />
+    <state width="1218" height="224" key="GridCell.Tab.1.right" timestamp="1578083872436">
+      <screen x="0" y="23" width="1280" height="730" />
+    </state>
+    <state width="1218" height="224" key="GridCell.Tab.1.right/0.23.1280.726@0.23.1280.726" timestamp="1578077782518" />
+    <state width="1218" height="224" key="GridCell.Tab.1.right/0.23.1280.727@0.23.1280.727" timestamp="1578077372695" />
+    <state width="1218" height="224" key="GridCell.Tab.1.right/0.23.1280.729@0.23.1280.729" timestamp="1578082991583" />
+    <state width="1218" height="224" key="GridCell.Tab.1.right/0.23.1280.730@0.23.1280.730" timestamp="1578083872436" />
     <state x="310" y="150" key="NewModule_or_Project.wizard" timestamp="1576882434690">
       <screen x="0" y="23" width="1280" height="727" />
     </state>
     <state x="310" y="150" key="NewModule_or_Project.wizard/0.23.1280.727@0.23.1280.727" timestamp="1576882434690" />
-    <state x="316" y="143" width="816" height="550" key="find.popup" timestamp="1576884528727">
-      <screen x="0" y="23" width="1280" height="727" />
+    <state x="329" y="217" key="com.intellij.ide.util.TipDialog" timestamp="1578071323184">
+      <screen x="0" y="23" width="1280" height="726" />
     </state>
-    <state x="316" y="143" width="816" height="550" key="find.popup/0.23.1280.727@0.23.1280.727" timestamp="1576884528727" />
+    <state x="329" y="217" key="com.intellij.ide.util.TipDialog/0.23.1280.726@0.23.1280.726" timestamp="1578071323184" />
+    <state x="288" y="23" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1578073655465">
+      <screen x="0" y="23" width="1280" height="724" />
+    </state>
+    <state x="288" y="23" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.23.1280.724@0.23.1280.724" timestamp="1578073655465" />
+    <state x="316" y="143" width="816" height="549" key="find.popup" timestamp="1578075901990">
+      <screen x="0" y="23" width="1280" height="724" />
+    </state>
+    <state x="316" y="143" width="816" height="549" key="find.popup/0.23.1280.724@0.23.1280.724" timestamp="1578075901990" />
+    <state x="316" y="143" width="816" height="550" key="find.popup/0.23.1280.726@0.23.1280.726" timestamp="1578075207108" />
+    <state x="316" y="143" width="816" height="550" key="find.popup/0.23.1280.727@0.23.1280.727" timestamp="1576885752133" />
+    <state x="283" y="73" key="search.everywhere.popup" timestamp="1577043398311">
+      <screen x="0" y="23" width="1280" height="726" />
+    </state>
+    <state x="283" y="73" key="search.everywhere.popup/0.23.1280.726@0.23.1280.726" timestamp="1577043398311" />
   </component>
 </project>
