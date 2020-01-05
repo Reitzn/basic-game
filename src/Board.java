@@ -1,4 +1,3 @@
-import java.awt.Color;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.Toolkit;
@@ -6,17 +5,20 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
-import java.util.List;
 import javax.swing.JPanel;
 import javax.swing.Timer;
 
 public class Board extends JPanel implements ActionListener {
 
-    private final int ICRAFT_X = 40;
-    private final int ICRAFT_Y = 60;
+    private final int PLAYER_X = 40;
+    private final int PLAYER_Y = 60;
+    private final int HEALTH_X = 0;
+    private final int HEALTH_Y = -25;
     private final int DELAY = 10;
     private Timer timer;
     private Player player;
+    private Health health;
+    private Enemy enemy;
 
     public Board() {
 
@@ -28,7 +30,9 @@ public class Board extends JPanel implements ActionListener {
         addKeyListener(new TAdapter());
         setFocusable(true);
 
-        player = new Player(ICRAFT_X, ICRAFT_Y);
+        player = new Player(PLAYER_X, PLAYER_Y);
+        health = new Health(HEALTH_X, HEALTH_Y);
+        enemy = new Enemy(240,70);
 
         timer = new Timer(DELAY, this);
         timer.start();
@@ -47,8 +51,9 @@ public class Board extends JPanel implements ActionListener {
 
         Graphics2D g2d = (Graphics2D) g;
 
-        g2d.drawImage(player.getImage(), player.getX(),
-                player.getY(), this);
+        g2d.drawImage(player.getImage(), player.getX(), player.getY(), this);
+        g2d.drawImage(health.getImage(), health.getX(), health.getY(), this);
+        g2d.drawImage(enemy.getImage(), enemy.getX(), enemy.getY(), this);
     }
 
     @Override

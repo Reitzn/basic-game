@@ -5,17 +5,12 @@ public class TestMain extends JFrame {
 
     public TestMain() {
 
-        initUI();
-    }
-
-    private void initUI() {
-
         add(new Board());
 
-        setSize(400, 300);
+        setSize(900, 600);
         setResizable(false);
 
-        setTitle("Shooting missiles");
+        setTitle("Basic Game");
         setLocationRelativeTo(null);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     }

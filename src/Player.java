@@ -1,38 +1,55 @@
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.awt.event.KeyEvent;
-import java.util.Timer;
-import java.util.TimerTask;
-
-class UpdateSprite extends TimerTask
-{
-    public static int i = 0;
-
-    public void run(){
-        System.out.println("Timer ran " + ++i);
-        loadImage("src/resources/icons/Adventurer/Individual Sprites/adventurer-idle-00.png");
-    }
-}
+import javax.swing.Timer;
 
 public class Player extends Sprite {
 
     private int dx;
     private int dy;
-    private Timer timer;
-    private TimerTask task;
+    private int i, i2, i3, i4=0;
+    private Timer runTimer, standTimer, jumpTimer, attackTimer;
+    private Boolean isFacingRight = true;
+    int health;
+
 
     public Player(int x, int y) {
         super(x, y);
-        timer = new Timer();
-        task = new UpdateSprite();
-        timer.schedule(task,2000, 5000);
+        runTimer = new Timer(100, new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                playerRun();
+            }
+        });
 
-        initCraft();
-    }
+        standTimer = new Timer(200, new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                playerIdle();
+            }
+        });
 
-    private void initCraft() {
+        jumpTimer = new Timer(200, new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                playerJump();
+            }
+        });
+
+        attackTimer = new Timer(100, new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                playerAttack();
+            }
+        });
+
+        health = 100;
 
         loadImage("src/resources/icons/Adventurer/Individual Sprites/adventurer-idle-00.png");
         getImageDimensions();
+        standTimer.start();
     }
+
     private void checkCollision() {
     }
 
@@ -55,16 +72,25 @@ public class Player extends Sprite {
         int key = e.getKeyCode();
 
         if (key == KeyEvent.VK_SPACE) {
-            //fire();
-            //attack function?
+            standTimer.stop();
+            runTimer.stop();
+            attackTimer.start();
         }
 
         if (key == KeyEvent.VK_LEFT) {
+            //setSprite("adventurer-idle-left-00.png");
+            isFacingRight = false;
             dx = -1;
+            standTimer.stop();
+            runTimer.start();
         }
 
         if (key == KeyEvent.VK_RIGHT) {
+            //setSprite("adventurer-idle-00.png");
+            isFacingRight = true;
             dx = 1;
+            standTimer.stop();
+            runTimer.start();
         }
 
         if (key == KeyEvent.VK_UP) {
@@ -82,10 +108,14 @@ public class Player extends Sprite {
 
         if (key == KeyEvent.VK_LEFT) {
             dx = 0;
+            runTimer.stop();
+            standTimer.start();
         }
 
         if (key == KeyEvent.VK_RIGHT) {
             dx = 0;
+            runTimer.stop();
+            standTimer.start();
         }
 
         if (key == KeyEvent.VK_UP) {
@@ -96,8 +126,75 @@ public class Player extends Sprite {
            // dy = 0;
         }
     }
+    private void playerJump(){
+        if (isFacingRight) {
+            System.out.println("Right jump:  " + i3);
+            setSprite("adventurer-jump-0" + i3 + ".png");
+        } else {
+            System.out.println("Left jump:  " + i3);
+            setSprite("adventurer-jump-left-0" + i3 + ".png");
+        }
+        if (i3 < 3) {
+            i3++;
+        } else {
+            i3=0;
+            jumpTimer.stop();
+        }
+    }
 
-    public void updateSprite(){
+    //i could make a modular function to do this for walking and idle?
+    private void playerIdle(){
 
+        if (isFacingRight) {
+            System.out.println("Right stand:  " + i2);
+            setSprite("adventurer-idle-0" + i2 + ".png");
+        } else {
+            System.out.println("Left stand:  " + i2);
+            setSprite("adventurer-idle-left-0" + i2 + ".png");
+        }
+        if (i2 < 3) {
+            i2++;
+        } else {
+            i2 = 0;
+        }
+    }
+
+    //rework the run to work like idle, nice and clean.
+    private void playerRun(){
+
+        if (isFacingRight) {
+            System.out.println("Right run:  " + i);
+            setSprite("adventurer-run-0" + i + ".png");
+        } else {
+            System.out.println("Left run:  " + i);
+            setSprite("adventurer-run-left-0" + i + ".png");
+        }
+        if (i < 5) {
+            i++;
+        } else {
+            i = 0;
+        }
+
+    }
+
+    private void playerAttack(){
+        if (isFacingRight) {
+            System.out.println("Right attack:  " + i4);
+            setSprite("adventurer-attack1-0" + i4 + ".png");
+        } else {
+            System.out.println("Left attack:  " + i4);
+            setSprite("adventurer-attack1-left-0" + i4 + ".png");
+        }
+        if (i4 < 5) {
+            i4++;
+        } else {
+            attackTimer.stop();
+            setSprite("adventurer-idle-00.png");
+            i4 = 0;
+        }
+    }
+
+    private void setSprite(String sprite){
+        loadImage("src/resources/icons/Adventurer/Individual Sprites/" + sprite );
     }
 }
