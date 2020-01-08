@@ -8,7 +8,7 @@ public class Player extends Sprite {
     private int dx;
     private int dy;
     private int i, i2, i3, i4=0;
-    private Timer runTimer, standTimer, jumpTimer, attackTimer;
+    private Timer runTimer, standTimer, jumpTimer, attackTimer, attackTwoTimer, attackThreeTimer;
     private Boolean isFacingRight = true;
     int health;
 
@@ -40,6 +40,20 @@ public class Player extends Sprite {
             @Override
             public void actionPerformed(ActionEvent e) {
                 playerAttack();
+            }
+        });
+
+        attackTwoTimer = new Timer(100, new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                playerAttackTwo();
+            }
+        });
+
+        attackThreeTimer = new Timer(100, new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                playerAttackThree();
             }
         });
 
@@ -77,7 +91,8 @@ public class Player extends Sprite {
             attackTimer.start();
         }
 
-        if (key == KeyEvent.VK_LEFT) {
+        if (key == KeyEvent.VK_LEFT ||
+                key == KeyEvent.VK_A) {
             //setSprite("adventurer-idle-left-00.png");
             isFacingRight = false;
             dx = -1;
@@ -85,7 +100,8 @@ public class Player extends Sprite {
             runTimer.start();
         }
 
-        if (key == KeyEvent.VK_RIGHT) {
+        if (key == KeyEvent.VK_RIGHT ||
+                key == KeyEvent.VK_D) {
             //setSprite("adventurer-idle-00.png");
             isFacingRight = true;
             dx = 1;
@@ -93,12 +109,21 @@ public class Player extends Sprite {
             runTimer.start();
         }
 
-        if (key == KeyEvent.VK_UP) {
-           // dy = -1;
+        if (key == KeyEvent.VK_J) {
+            standTimer.stop();
+            runTimer.stop();
+            attackTimer.start();
         }
 
-        if (key == KeyEvent.VK_DOWN) {
-           // dy = 1;
+        if (key == KeyEvent.VK_K) {
+            standTimer.stop();
+            runTimer.stop();
+            attackTwoTimer.start();
+        }
+        if (key == KeyEvent.VK_L) {
+            standTimer.stop();
+            runTimer.stop();
+            attackThreeTimer.start();
         }
     }
 
@@ -106,20 +131,28 @@ public class Player extends Sprite {
 
         int key = e.getKeyCode();
 
-        if (key == KeyEvent.VK_LEFT) {
+        if (key == KeyEvent.VK_LEFT ||
+                key == KeyEvent.VK_A) {
             dx = 0;
             runTimer.stop();
             standTimer.start();
         }
 
-        if (key == KeyEvent.VK_RIGHT) {
+        if (key == KeyEvent.VK_RIGHT ||
+                key == KeyEvent.VK_D) {
             dx = 0;
             runTimer.stop();
             standTimer.start();
         }
 
-        if (key == KeyEvent.VK_UP) {
-           // dy = 0;
+        if (key == KeyEvent.VK_J) {
+
+        }
+        if (key == KeyEvent.VK_K) {
+
+        }
+        if (key == KeyEvent.VK_L) {
+
         }
 
         if (key == KeyEvent.VK_DOWN) {
@@ -159,7 +192,6 @@ public class Player extends Sprite {
         }
     }
 
-    //rework the run to work like idle, nice and clean.
     private void playerRun(){
 
         if (isFacingRight) {
@@ -185,14 +217,51 @@ public class Player extends Sprite {
             System.out.println("Left attack:  " + i4);
             setSprite("adventurer-attack1-left-0" + i4 + ".png");
         }
-        if (i4 < 5) {
+        if (i4 < 4) {
             i4++;
         } else {
             attackTimer.stop();
             setSprite("adventurer-idle-00.png");
+            standTimer.start();
             i4 = 0;
         }
     }
+
+    private void playerAttackTwo(){
+        if (isFacingRight) {
+            System.out.println("Right attack:  " + i4);
+            setSprite("adventurer-attack2-0" + i4 + ".png");
+        } else {
+            System.out.println("Left attack:  " + i4);
+            setSprite("adventurer-attack2-left-0" + i4 + ".png");
+        }
+        if (i4 < 5) {
+            i4++;
+        } else {
+            attackTwoTimer.stop();
+            setSprite("adventurer-idle-00.png");
+            standTimer.start();
+            i4 = 0;
+        }
+    }
+    private void playerAttackThree(){
+        if (isFacingRight) {
+            System.out.println("Right attack:  " + i4);
+            setSprite("adventurer-attack3-0" + i4 + ".png");
+        } else {
+            System.out.println("Left attack:  " + i4);
+            setSprite("adventurer-attack3-left-0" + i4 + ".png");
+        }
+        if (i4 < 5) {
+            i4++;
+        } else {
+            attackThreeTimer.stop();
+            setSprite("adventurer-idle-00.png");
+            standTimer.start();
+            i4 = 0;
+        }
+    }
+
 
     private void setSprite(String sprite){
         loadImage("src/resources/icons/Adventurer/Individual Sprites/" + sprite );

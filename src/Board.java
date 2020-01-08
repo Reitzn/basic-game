@@ -19,14 +19,9 @@ public class Board extends JPanel implements ActionListener {
     private Player player;
     private Health health;
     private Enemy enemy;
+    private Block block;
 
     public Board() {
-
-        initBoard();
-    }
-
-    private void initBoard() {
-
         addKeyListener(new TAdapter());
         setFocusable(true);
 
@@ -34,9 +29,13 @@ public class Board extends JPanel implements ActionListener {
         health = new Health(HEALTH_X, HEALTH_Y);
         enemy = new Enemy(240,70);
 
+        block = new Block(0, 0);
+
+
         timer = new Timer(DELAY, this);
         timer.start();
     }
+
 
     @Override
     public void paintComponent(Graphics g) {
@@ -54,6 +53,30 @@ public class Board extends JPanel implements ActionListener {
         g2d.drawImage(player.getImage(), player.getX(), player.getY(), this);
         g2d.drawImage(health.getImage(), health.getX(), health.getY(), this);
         g2d.drawImage(enemy.getImage(), enemy.getX(), enemy.getY(), this);
+
+        int[][] map = {{0,0,0,0,0,0,0,0,0},
+                {0,0,0,0,0,0,0,0,0},
+                {0,0,0,0,0,0,0,0,0},
+                {0,0,0,0,0,0,0,0,0},
+                {0,0,0,0,0,0,0,0,0},
+                {0,0,0,0,0,0,0,0,0},
+                {1,1,1,1,1,1,1,1,1}
+        };
+
+        int x = -3, y = 0;
+        System.out.println(map.length);
+        System.out.println(map[0].length);
+        System.out.println(map[1].length);
+        for (int i = 0; i < map.length; i++) {
+            for (int b = 0; b < map[i].length; b++) {
+                if(map[i][b] == 1)
+                    g2d.drawImage(block.getImage(), x, y, this);
+                x += 42;
+            }
+            x = -3;
+            y += 50;
+        }
+
     }
 
     @Override
