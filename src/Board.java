@@ -54,7 +54,8 @@ public class Board extends JPanel implements ActionListener {
         g2d.drawImage(health.getImage(), health.getX(), health.getY(), this);
         g2d.drawImage(enemy.getImage(), enemy.getX(), enemy.getY(), this);
 
-        int[][] map = {{0,0,0,0,0,0,0,0,0},
+        int[][] map = {
+                {0,0,0,0,0,0,0,0,0},
                 {0,0,0,0,0,0,0,0,0},
                 {0,0,0,0,0,0,0,0,0},
                 {0,0,0,0,0,0,0,0,0},
@@ -64,9 +65,6 @@ public class Board extends JPanel implements ActionListener {
         };
 
         int x = -3, y = 0;
-        System.out.println(map.length);
-        System.out.println(map[0].length);
-        System.out.println(map[1].length);
         for (int i = 0; i < map.length; i++) {
             for (int b = 0; b < map[i].length; b++) {
                 if(map[i][b] == 1)
